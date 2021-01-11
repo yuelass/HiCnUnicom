@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: 30 04,23 * * ?
+    - cron: 30 03,* * * ?
   watch:
     types: started
     
@@ -35,58 +35,11 @@ jobs:
            #bash CnUnicom.sh
     #例子到此为止
  
-        - name: Run 号码1
+        - name: Run 18604042624
           env:
            haoma: ${{ secrets.HAOMA }}
            mm: ${{ secrets.MM }}
            appid: ${{ secrets.APPID }}
           run: |
            bash CnUnicom.sh
-           
-        - name: Run 号码2
-          env:
-           haoma: ${{ secrets.HAOMA2 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh
-           
-        - name: Run 号码3
-          env:
-           haoma: ${{ secrets.HAOMA3 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh
-           
-        - name: Run 号码4
-          env:
-           haoma: ${{ secrets.HAOMA4 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh
-           
-        - name: Run 号码5
-          env:
-           haoma: ${{ secrets.HAOMA5 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh
-           
-        - name: Run 号码6
-          env:
-           haoma: ${{ secrets.HAOMA6 }}
-           mm: ${{ secrets.MM }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh
-           
-        - name: Run 号码7
-          env:
-           haoma: ${{ secrets.HAOMA7 }}
-           mm: ${{ secrets.MM2 }}
-           appid: ${{ secrets.APPID }}
-          run: |
-           bash CnUnicom.sh
+     
