@@ -35,7 +35,7 @@ jobs:
            #bash CnUnicom.sh
     #例子到此为止
  
-        - name: Run 号码1
+        - name: Run 18604042624
           env:
            haoma: ${{ secrets.HAOMA }}
            mm: ${{ secrets.MM }}
